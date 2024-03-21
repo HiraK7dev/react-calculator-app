@@ -12,8 +12,8 @@ function App() {
           <Route path='/about' element={<About />} />
         </Routes>
         <div id='footer'>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
+          <Link to='/'>HOME</Link>
+          <Link to='/about'>ABOUT</Link>
         </div>
       </BrowserRouter>
     </div>
