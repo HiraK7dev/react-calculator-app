@@ -8,7 +8,7 @@ function Buttons(props){
     const signs3 = [`1`, `2`, `3`, `+`];
     const signs4 = [`00`, `0`, `.`, `=`];
     return (
-        <>
+        <div id="buttonPanel">
         <div className="row">
             {
                 signs0.map((items) => {
@@ -44,7 +44,7 @@ function Buttons(props){
                 })
             }
         </div>
-        </>
+        </div>
     )
 }
 

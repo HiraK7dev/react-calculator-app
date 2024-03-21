@@ -4,9 +4,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: gray;
+    /* background-color: gray; */
 }
 button{
     height: 70%;
     width: 20%;
+}
+#buttonPanel{
+    width: 100%;
 }

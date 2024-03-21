@@ -9,20 +9,30 @@ function Home(){
             setDisplayValue(``);
         }
         else if(event.target.value === `%`){
-            setDisplayValue(displayValue + `/100`);
+            if(displayValue == `ERROR` || displayValue == ``){
+                setDisplayValue(``);
+            }
+            else{
+                setDisplayValue(displayValue + `/100`);
+            }
         }
         else if(event.target.value === `<=`){
             setDisplayValue(displayValue.slice(0, displayValue.length - 1))
         }
         else if(event.target.value === `=`){
             try {
-                setDisplayValue(eval(displayValue));
+                setDisplayValue(eval(displayValue).toString());
             } catch (error) {
                 setDisplayValue(`ERROR`);
             }
         }
         else{
-            setDisplayValue(displayValue + event.target.value);
+            if(displayValue == `ERROR`){
+                setDisplayValue(event.target.value)
+            }
+            else{
+                setDisplayValue(displayValue + event.target.value);
+            }
         }
     }
     return(
